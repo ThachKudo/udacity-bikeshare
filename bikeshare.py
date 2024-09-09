@@ -6,7 +6,7 @@ import numpy as np
     
     by ThachNN3
     Project: Explore US Bikeshare Data
-    Due Date: Mark 30, 2024
+    Due Date: Setp 9, 2024
 """
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
@@ -167,7 +167,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating Trip Duration.\n')
     start_time = time.time()
 
     # Display total travel time
