@@ -204,6 +204,7 @@ def user_stats(df, city):
         print(' ' * 40)
         print('Counts of Each User Gender:')
         print(gender)
+        print('Print Data:')
     except:
         print('Counts of Each User Gender:\nSorry, no gender data available for {} City'.format(city.title()))
       
@@ -233,7 +234,7 @@ def individual_data(df):
         raw_data = input("\nWould you like to see individual trip data? Enter 'yes' or 'no'.\n")
         if raw_data.lower() == 'yes':
             
-            print("\nDisplaying only 5 rows of data.\n")
+            print("\nDisplaying only 5 rows of data at screen.\n")
             if end_data > df_length:
                 end_data = df_length
             print(df.iloc[start_data:end_data])
@@ -257,7 +258,7 @@ def main():
         user_stats(df, city)
         individual_data(df)
 
-        restart = input("\nWould you like to restart? Enter yes or no.\n")
+        restart = input("\nWould you like to restart? Enter yes or no answers.\n")
         if restart.lower() != 'yes':
             break
 
