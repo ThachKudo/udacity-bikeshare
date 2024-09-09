@@ -192,6 +192,7 @@ def user_stats(df, city):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
+    print('\nCalculating User Stats with time...\n')
     start_time = time.time()
 
     # Display counts of user types
